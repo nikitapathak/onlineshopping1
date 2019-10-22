@@ -1,8 +1,5 @@
 <div class="container">
-
-
-
-	<div class="row">
+<div class="row">
 
 		<h2>ContactT US</h2>
 		<hr />

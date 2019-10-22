@@ -13,6 +13,8 @@ xmlns:mvc = "http://www.springframework.org/schema/mvc"
    ">
    
    <context:component-scan base-package="pathak.nikita.onlineshopping.controller"/>
+      <context:component-scan base-package="pathak.nikita.shopping_backend.daoimpl"/>
+   
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

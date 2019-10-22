@@ -5,13 +5,19 @@
  */
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+html
+{
+	height:100%;
+}
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+     
 }
 body {
   margin: 0;
+  height:100%;
 }
 article,
 aside,
@@ -1687,7 +1693,22 @@ output {
   color: #555;
 }
 .form-control {
-  display: block;
+	
+    width: 111%;
+    height: 46px;
+    /* padding: 18px 12px; */
+    font-size: 18px;
+    line-height: 3.428571;
+    color: #555;
+    background-color: #e5e5e5;;
+    background-image: none;
+   /*  border: 5px solid #CE3;
+    border-radius: 13px; */
+    -webkit-box-shadow: inset 7 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+ /*  display: block;
   width: 100%;
   height: 34px;
   padding: 6px 12px;
@@ -1695,13 +1716,13 @@ output {
   line-height: 1.428571429;
   color: #555;
   background-color: #fff;
-  background-image: none;
+  background-image: none
   border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; */
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -3304,8 +3325,7 @@ input[type="button"].btn-block {
 }
 .input-group {
   position: relative;
-  display: table;
-  border-collapse: separate;
+    border-collapse: separate;
 }
 .input-group[class*="col-"] {
   float: none;
@@ -3313,9 +3333,10 @@ input[type="button"].btn-block {
   padding-left: 0;
 }
 .input-group .form-control {
-  float: left;
-  width: 100%;
-  margin-bottom: 0;
+     width: 26%;
+    margin-bottom: -7px;
+    margin-top: 7px;
+    margin-right: 700px;
 }
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
@@ -3375,7 +3396,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon,
 .input-group-btn {
-  width: 1%;
   white-space: nowrap;
   vertical-align: middle;
 }
@@ -3723,7 +3743,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
+  
   right: 0;
   left: 0;
   z-index: 1030;
@@ -3744,11 +3764,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-width: 1px 0 0;
 }
 .navbar-brand {
-  float: left;
+ /*  float: left;
   height: 20px;
-  padding: 15px 15px;
+  padding: 15px 500px;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 20px; */
+  
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -3864,6 +3885,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: inline-block;
     width: auto;
     vertical-align: middle;
+  }
+ .input-group .form-control
+  {
+
+    width: 31%;
+    margin-bottom: -13px;
   }
   .navbar-form .control-label {
     margin-bottom: 0;
@@ -5828,4 +5855,30 @@ td.visible-print {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+/*
+Custom styling
+*/
+.wrapper {
+	min-height:100%;
+	position:relative;
+}
+.content
+{
+	padding-bottom : 60px:/*height of the footer */
+}
+.footer
+{
+	position : absolute;
+	bottion:0;
+	height: 60 px;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+    /* position: fixed; */
+    right: -1px;
+    left: 0;
+    z-index: 1030;
+}
+/* .input-group-addon, .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+} */
